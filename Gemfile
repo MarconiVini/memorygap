@@ -31,7 +31,7 @@ gem 'unicorn'
 gem 'devise'
 gem 'twitter-bootstrap-rails'#, :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 gem 'execjs'
-
+gem 'haml'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
