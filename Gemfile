@@ -33,6 +33,8 @@ gem 'twitter-bootstrap-rails'#, :git => 'git://github.com/seyhunak/twitter-boots
 gem 'therubyracer'
 gem 'haml'
 gem "less-rails"
+gem 'encryptzator', :git => 'https://github.com/MarconiVini/encryptzator.git'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
