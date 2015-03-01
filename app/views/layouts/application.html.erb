@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>Memorygap</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -7,10 +7,9 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= render 'shared/header' %>
-
-<%= yield %>
-
+  <%= render 'shared/header' %>
+  <div class="container">
+    <%= yield %>
+  </div>
 </body>
 </html>
