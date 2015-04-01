@@ -1,16 +1,20 @@
 .navbar.navbar-inverse
-  .navbar-inner
-    .container
-      %a.brand.pull-left
-        Marconi
-      -if user_signed_in?
-        bem vindo 
-        %span=current_user.name
-        %span=current_user.encrypted_password
-        =link_to "Logout", destroy_user_session_path, method: :delete
-      -else
-        = form_for(:user, :url => session_path(:user)) do |f|
-          = f.text_field :email
-          = f.password_field :password 
-          = f.submit 'Sign in'
-          = link_to "Forgot your password?", new_password_path(:user)
+  .container
+    .navbar-header
+      %a.navbar-brand.pull-left
+        Memorygap
+    .collapse.navbar-collapse
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          %a Home
+        %li
+          %a About
+        %li
+          -if user_signed_in?
+            =link_to "Logout", destroy_user_session_path, method: :delete
+          -else
+            = form_for(:user, :url => session_path(:user)) do |f|
+              = f.text_field :email
+              = f.password_field :password 
+              = f.submit 'Sign in'
+              = link_to "Forgot your password?", new_password_path(:user)

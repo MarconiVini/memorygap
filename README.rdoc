@@ -1,28 +1,12 @@
-== README
+# Memorygap
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> People are dumb, and they(specially me) forgot their passwords
+> and by that time Memorygap seemed to be quite awesome solution!
 
-Things you may want to cover:
+This is a small project for storing any kinds of key-value secure string. 
+Whether they are names, dates, passwords or numbers, they will be securely hidden into our servers.
 
-* Ruby version
+## Usage 
+This is a open-software and virtually anyone can use it in your own server, with your own risks.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Enjoy!
