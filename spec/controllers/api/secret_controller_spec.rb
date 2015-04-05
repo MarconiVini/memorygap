@@ -1,11 +1,16 @@
 require "rails_helper"
 
 RSpec.describe Api::SecretController, :type => :controller do
-  describe "POST" do
-    it "responds successfully with an HTTP 200 status code" do
-      get :create
+  describe "without user API authentication" do
+
+    let(:user) { FactoryGirl.create(:user) }
+
+    it "responds successfully with an HTTP 401 status code" do
+      sign_in user
+      post :create, { purchase: user.api_token }
       expect(response).to be_success
-      expect(response).to have_http_status(200)
+      binding.pry
+      expect(response).to have_http_status(401)
     end
   end
 end

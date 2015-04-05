@@ -4,5 +4,6 @@ FactoryGirl.define do
     sequence(:email) { |n| "mv#{n}@gmail.com" }
     sequence(:password) { "myownpass" }
     sequence(:password_confirmation) { "myownpass" }
-  end  
+    api_token { SecureRandom.hex(16).to_i(16).to_s(36) }
+  end
 end

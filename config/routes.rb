@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   root 'home#index'
 
   namespace :api do
-    get 'secret' => 'secret#create'
+    post 'secret' => 'secret#create'
   end
 
   # The priority is based upon order of creation: first created -> highest priority.

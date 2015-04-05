@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150405014652) do
+ActiveRecord::Schema.define(version: 20150405222605) do
 
   create_table "occultis_labels", force: :cascade do |t|
     t.binary   "secure_message_label"
@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 20150405014652) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
+    t.string   "api_token"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

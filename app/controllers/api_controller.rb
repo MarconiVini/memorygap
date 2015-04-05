@@ -5,6 +5,7 @@ class ApiController < ActionController::Base
 
   before_action :check_keys
 
+  #check if key is supplied and check if it belongs to the current_user
   def check_keys
     binding.pry
   end
