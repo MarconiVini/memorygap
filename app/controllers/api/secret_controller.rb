@@ -1,7 +1,7 @@
 class Api::SecretController < ApplicationController
   
   def create
-    binding.pry    
+    #binding.pry    
   end
 
   private
