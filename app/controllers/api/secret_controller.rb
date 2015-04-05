@@ -1,7 +1,8 @@
-class Api::SecretController < ApplicationController
+class Api::SecretController < ApiController
   
   def create
-    #binding.pry    
+    #binding.pry
+    render nothing: true, status: 200, content_type:'text/html'    
   end
 
   private
